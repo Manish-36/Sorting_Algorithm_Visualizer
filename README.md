@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Sorting Algorithm Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To visualize different sorting algorithms for easy learning.
+
+## Sample Screenshots
+
+<img width="1919" height="1010" alt="Image" src="https://github.com/user-attachments/assets/398f2888-47f2-4ced-bc17-28344f5cd89c" />
+
+<img width="1919" height="1020" alt="Image" src="https://github.com/user-attachments/assets/adcbbc20-f109-40b5-848b-181593837053" />
+
+<img width="1919" height="1003" alt="Image" src="https://github.com/user-attachments/assets/c77b7950-ba53-41fa-a483-203e24c32d6d" />
 
 ## Available Scripts
 
