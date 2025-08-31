@@ -1,0 +1,129 @@
+.array-container {
+  position: absolute;
+  left: 100px;
+  font-family: Arial, sans-serif;
+}
+
+/* Controls Panel */
+.controls-panel {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px; /* Reduced margin */
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.control-group label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.control-group input[type="range"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.speed-labels,
+.bars-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Array Display */
+.array-display {
+  margin-bottom: 20px;
+  height: 530px; /* Updated to accommodate max bar height of 510px */
+}
+
+.array-bar {
+  width: 10px;
+  background-color: turquoise;
+  display: inline-block;
+  margin: 0 1px;
+  transition: background-color 0.1s ease;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Sorting Buttons */
+.sorting-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.reset-btn,
+.sort-btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.reset-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.reset-btn:hover:not(:disabled) {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.sort-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.sort-btn:hover:not(:disabled) {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.reset-btn:disabled,
+.sort-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .controls-panel {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .array-display {
+    min-width: 90vw;
+  }
+  
+  .sorting-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
